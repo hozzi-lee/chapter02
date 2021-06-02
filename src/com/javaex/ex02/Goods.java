@@ -17,23 +17,29 @@ public class Goods {
 	}
 
 	public void setPrice( int price ) {
-		this.price = price;
+		if ( price < 0 ) {
+			this.price = 0;
+		} else {
+			this.price = price;
+		}
 	}
 
 	public String getName() {
-		// 
-		return name;
+		return this.name;
 	}
 
-	public int getPrice() {
-		//
-		return price;
+	private int getPrice() {
+		if ( this.price < 0 ) {
+			return 0;
+		}else {
+			return this.price;
+		}
 	}
 
 
 	public void showInfo() {
-		System.out.println("이름: " + name);
-		System.out.println("가격: " + price);
+		System.out.println("상품이름: " + this.name);
+		System.out.println("가격: " + this.getPrice());
 		System.out.println("------------------");
 	}
 
