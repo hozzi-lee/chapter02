@@ -41,7 +41,7 @@ public class Song {
 		this.track = track;
 		this.composer = composer;
 	}
-	
+
 
 	// 메소드_Getter
 	private String getArtist() {
@@ -62,13 +62,11 @@ public class Song {
 	private String getComposer() {
 		return this.composer;
 	}
-	
+
 
 	// 메소드_일반
 	public void showInfo() {
 		System.out.println(getArtist() + ", " + getTitle() + " ( " + getAlbum() + ", " + getYear() + ", " + getTrack() + "번 track, " + getComposer() + " 작곡 )");
 	}
-
-
 
 }
