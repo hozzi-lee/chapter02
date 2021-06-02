@@ -12,14 +12,14 @@ public class Goods {
 
 	// 메소드 - 일반
 
-	public void setName( String n ) {
-		name = n;
+	public void setName( String name ) {
+		this.name = name;
 	}
 
-	public void setPrice( int p ) {
-		price = p;
+	public void setPrice( int price ) {
+		this.price = price;
 	}
-	/*
+
 	public String getName() {
 		// 
 		return name;
@@ -29,7 +29,7 @@ public class Goods {
 		//
 		return price;
 	}
-	 */	
+
 
 	public void showInfo() {
 		System.out.println("이름: " + name);
