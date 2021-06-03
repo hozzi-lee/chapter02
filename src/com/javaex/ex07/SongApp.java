@@ -30,15 +30,20 @@ public class SongApp {
 		song03.showInfo();
 
 
-		// 필드의 일부만 초기화된 생성자 2개 사용
-		Song song04 = new Song("좋은날");
-		song04 = new Song(2010);
+		// 피라미터 2개짜리 생성자 사용
+		Song song04 = new Song("좋은날", 2010);
 		song04.setArtist("아이유");
 		song04.setAlbum("Real");
 		song04.setTrack(3);
 		song04.setComposer("이민수");
 
 		song04.showInfo();
+		
+		
+		// 생성자 안에 생성자 this()
+		Song song05 = new Song("거짓말", "BIGBANG", "Always", "G-DRAGON", 2007, 2);
+
+		song05.showInfo();
 
 
 	}

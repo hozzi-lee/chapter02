@@ -12,9 +12,31 @@ public class Song {
 
 
 	// 생성자 --> 힙에 올린다
+
 	public Song() {
 		// dafault생성자
 	}
+	public Song(String title, int year) {
+		this.title = title;
+		if ( year < 0 ) {
+			this.year = 0;
+		} else {
+			this.year = year;
+		}
+		System.out.println("==========================");
+		System.out.println("Song(2)");
+	}
+	public Song(String title, String artist, String album, String composer, int year, int track) {
+		this(title, year);
+
+		this.artist = artist;
+		this.album = album;
+		this.composer = composer;
+		this.track = track;
+		
+		System.out.println("Song(6)");
+	}
+	/*
 	public Song(String title, String artist, String album, String composer, int year, int track) {
 		this.title = title;
 		this.artist = artist;
@@ -23,12 +45,7 @@ public class Song {
 		this.year = year;
 		this.track = track;
 	}
-	public Song(String title) {
-		this.title = title;
-	}
-	public Song(int year) {
-		this.year = year;
-	}
+	 */
 
 
 	// 메소드 setter
