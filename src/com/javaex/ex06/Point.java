@@ -46,8 +46,24 @@ public class Point {
 	}
 
 
-	// 메소드 일반
+	// 메소드 일반(오버로딩)
 	public void draw() {
 		System.out.println("점[x="+ getX() +", y="+ getY() +"]을 그렸습니다.");
+	}
+
+	public void draw(boolean flag) {
+		if(flag == true) {
+			System.out.println("점[x="+ getX() +", y="+ getY() +"]을 그렸습니다.");			
+		} else {
+			System.out.println("점[x="+ getX() +", y="+ getY() +"]을 지웠습니다.");
+		}
+	}
+	
+	public void draw(int flag) {
+		if(flag == 1) {
+			System.out.println("점[x="+ getX() +", y="+ getY() +"]을 그렸습니다.");			
+		} else {
+			System.out.println("점[x="+ getX() +", y="+ getY() +"]을 지웠습니다.");
+		}
 	}
 }
