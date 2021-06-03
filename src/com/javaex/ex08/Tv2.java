@@ -13,24 +13,7 @@ public class Tv2 {
 
 	}
 
-	public Tv2(int channel, int volume) {
-		/*
-		if ( channel < 0 ) {
-			this.channel = 0;
-		} else if ( channel > 255 ) {
-			this.channel = 255;
-		} else {
-			this.channel = channel;
-		}
-
-		if ( volume < 0 ) {
-			this.volume = 0;
-		} else if ( volume > 100 ) {
-			this.volume = 100;
-		} else {
-			this.volume = volume;
-		}
-		 */
+	public Tv2(int channel, int volume) {	
 		this.channel = 7;
 		this.volume = 20;
 	}
@@ -40,7 +23,6 @@ public class Tv2 {
 
 		this.power = false;
 	}
-
 
 
 	// 메소드 setter - 작성안함
@@ -54,7 +36,6 @@ public class Tv2 {
 	private boolean getPower() {
 		return this.power;
 	}
-
 
 
 	// 메소드 일반
