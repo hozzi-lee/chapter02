@@ -1,8 +1,10 @@
 package com.javaex.ex04;
 
 
-// 필드
+
 public class Song {
+	
+	// 필드
 	private String title;
 	private String artist;
 	private String album;
@@ -10,6 +12,10 @@ public class Song {
 	private int year;
 	private int track;
 
+	// 생성자
+	public Song() {
+		
+	}
 
 	// 메소드_Setter
 	/*
