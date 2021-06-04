@@ -3,6 +3,7 @@ package com.javaex.ex11;
 public class MyMath {
 
 	// 필드
+	private static double pi = 3.14;
 
 
 
@@ -31,6 +32,12 @@ public class MyMath {
 		System.out.println(result);
 	}
 	 */
+	
+	public static double circleArea(int radius) {
+		double result = radius * radius * pi;
+		System.out.println(result);
+		return result;
+	}
 
 
 }
