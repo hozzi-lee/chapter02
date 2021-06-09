@@ -16,7 +16,9 @@ public class ShapeApp {
 		};
 		 */
 		Rectangle[] rectArray = {
-				new Rectangle("빨강", "검정", 5, 5), new Rectangle("노랑", "회색", 6, 6), new Rectangle("초록", "쥐색", 7, 7)
+				new Rectangle("빨강", "검정", 5, 5),
+				new Rectangle("노랑", "회색", 6, 6),
+				new Rectangle("초록", "쥐색", 7, 7)
 		};
 
 		/*
